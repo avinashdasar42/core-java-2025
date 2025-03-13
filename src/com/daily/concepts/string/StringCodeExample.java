@@ -16,6 +16,12 @@ public class StringCodeExample {
 		//substring
 		String newStr = str.substring(1,5);
 		System.out.println(newStr);
+
+		//equlas & compareTo
+		int result = str.compareTo("Hello World");
+		System.out.println(result);
+		boolean isEqual = str.equals("Hello World!!");
+		System.out.println(isEqual);
 	}
 
 }

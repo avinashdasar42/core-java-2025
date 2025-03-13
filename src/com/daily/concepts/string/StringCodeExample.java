@@ -12,6 +12,10 @@ public class StringCodeExample {
 		//charAt
 		char ch = str.charAt(0);
 		System.out.println(ch);
+
+		//substring
+		String newStr = str.substring(1,5);
+		System.out.println(newStr);
 	}
 
 }

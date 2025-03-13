@@ -22,6 +22,12 @@ public class StringCodeExample {
 		System.out.println(result);
 		boolean isEqual = str.equals("Hello World!!");
 		System.out.println(isEqual);
+
+		//startsWith & endsWith
+		boolean flag1 = str.startsWith("Hel");
+		boolean flag2 = str.endsWith("Hel");
+		System.out.println("flag1: "+flag1);
+		System.out.println("flag2: "+flag2);
 	}
 
 }

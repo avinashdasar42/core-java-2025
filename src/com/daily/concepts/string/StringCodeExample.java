@@ -39,6 +39,22 @@ public class StringCodeExample {
 		System.out.println("toLowerCase: "+toLowerCase);
 		System.out.println("toUpperCase: "+toUpperCase);
 		
+		//reverse given string
+		char[] charArray = str.toCharArray();
+		int left = 0;
+		int right = charArray.length-1;
+		
+		while(left < right) {
+			char temp = charArray[left];
+			charArray[left] = charArray[right];
+			charArray[right] = temp;
+			left++;
+			right--;
+		}
+		
+		String reversedStr = String.valueOf(charArray);
+		System.out.println(reversedStr);
+		
 	}
 
 }

@@ -28,6 +28,10 @@ public class StringCodeExample {
 		boolean flag2 = str.endsWith("Hel");
 		System.out.println("flag1: "+flag1);
 		System.out.println("flag2: "+flag2);
+		
+		//contains method
+		boolean flag3 = str.contains("Wor");
+		System.out.println("flag3: "+flag3);
 	}
 
 }

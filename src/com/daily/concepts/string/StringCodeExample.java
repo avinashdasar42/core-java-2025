@@ -32,6 +32,13 @@ public class StringCodeExample {
 		//contains method
 		boolean flag3 = str.contains("Wor");
 		System.out.println("flag3: "+flag3);
+
+		//upperCase & lowerCase
+		String toLowerCase = str.toLowerCase();
+		String toUpperCase = str.toUpperCase();
+		System.out.println("toLowerCase: "+toLowerCase);
+		System.out.println("toUpperCase: "+toUpperCase);
+		
 	}
 
 }

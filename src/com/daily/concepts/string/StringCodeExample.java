@@ -55,6 +55,9 @@ public class StringCodeExample {
 		String reversedStr = String.valueOf(charArray);
 		System.out.println(reversedStr);
 		
+		//join method
+		//public String join(CharSequence separator, CharSequence... elements)
+		String fruits = String.join(" ", "Orange", "Apple", "Mango");
+		System.out.println(fruits);		
 	}
-
 }

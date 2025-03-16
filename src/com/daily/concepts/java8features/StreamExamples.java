@@ -1,6 +1,7 @@
 package com.daily.concepts.java8features;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,5 +20,6 @@ public class StreamExamples {
 		Optional<Integer> first = nums.stream().filter(n-> n%3==0).findFirst();
 		System.out.println(first.get());
 		
+		nums.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println);
 	}
 }

@@ -16,10 +16,19 @@ public class StreamExamples {
 		//filter out only odd numbers and double it
 		nums.stream().filter(n -> n%2 ==1).map(n -> n*2).forEach(System.out :: println);	
 		
+		//sort
+		nums.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println);
+		
 		//terminal operators
 		Optional<Integer> first = nums.stream().filter(n-> n%3==0).findFirst();
 		System.out.println(first.get());
 		
-		nums.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println);
+		List<String> cities = Arrays.asList("Mumbai", "Delhi", "Bangalore");
+        long count = cities.stream().count();
+        System.out.println("Total cities: " + count);
+        
+        String city = cities.stream().findFirst().orElse(" ");
+        System.out.println(city);
+		
 	}
 }

@@ -65,10 +65,9 @@ public class StringCodeExample {
 		System.out.println(str);
 		System.out.println(str.trim());
 		
-		//isBlank & isEmpty methods
-		
+		//isBlank & isEmpty methods		
 		str = "  ";
-		System.out.println(str.isBlank());
-		System.out.println(str.isEmpty() );
+		System.out.println(str.isBlank()); //true
+		System.out.println(str.isEmpty()); //false
 	}
 }

@@ -64,5 +64,11 @@ public class StringCodeExample {
 		str = "  hello   ";
 		System.out.println(str);
 		System.out.println(str.trim());
+		
+		//isBlank & isEmpty methods
+		
+		str = "  ";
+		System.out.println(str.isBlank());
+		System.out.println(str.isEmpty());
 	}
 }

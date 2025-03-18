@@ -60,5 +60,9 @@ public class StringCodeExample {
 		String fruits = String.join(" ", "Orange", "Apple", "Mango");
 		System.out.println(fruits);		
 		
+		//trim
+		str = "  hello   ";
+		System.out.println(str);
+		System.out.println(str.trim());
 	}
 }

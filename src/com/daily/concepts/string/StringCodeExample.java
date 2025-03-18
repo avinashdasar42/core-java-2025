@@ -58,11 +58,7 @@ public class StringCodeExample {
 		//join method
 		//public String join(CharSequence separator, CharSequence... elements)
 		String fruits = String.join(" ", "Orange", "Apple", "Mango");
-		System.out.println(fruits);
-
-		//trim
-		String myStr = "       Hello World!        ";
-    	System.out.println(myStr);
-    	System.out.println(myStr.trim());
+		System.out.println(fruits);		
+		
 	}
 }

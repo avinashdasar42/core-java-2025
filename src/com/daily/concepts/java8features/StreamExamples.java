@@ -29,6 +29,8 @@ public class StreamExamples {
         
         String city = cities.stream().findFirst().orElse(" ");
         System.out.println(city);
+        
+        System.out.println(cities.stream().anyMatch(aCity -> aCity.startsWith("D")));
 		
 	}
 }

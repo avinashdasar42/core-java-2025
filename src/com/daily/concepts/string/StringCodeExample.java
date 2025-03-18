@@ -69,5 +69,17 @@ public class StringCodeExample {
 		str = "  ";
 		System.out.println(str.isBlank()); //true
 		System.out.println(str.isEmpty()); //false
+		
+		//concat & '+' operand >> both have same functionality of concatenating strings
+		// concat() >> only works with String data type
+		// '+' operand >> works with any data type & handles null scenario too 
+		String s1 = "Hello", s2 = "World!", s3 = null;
+		int num = 100;
+		System.out.println(s1+s2);//HelloWorld!
+		System.out.println(s1.concat(s2));//HelloWorld!
+		System.out.println(s1+s3);//Hellonull
+		System.out.println(s1.concat(s3));//throws null pointer exception
+		System.out.println(s1+num);
+		
 	}
 }

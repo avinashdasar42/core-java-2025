@@ -59,5 +59,10 @@ public class StringCodeExample {
 		//public String join(CharSequence separator, CharSequence... elements)
 		String fruits = String.join(" ", "Orange", "Apple", "Mango");
 		System.out.println(fruits);		
+		
+		//isEmpty & isBlank methods
+		str ="  ";
+		System.out.println(str.isBlank());
+		System.out.println(str.isEmpty());
 	}
 }

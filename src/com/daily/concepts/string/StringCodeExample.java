@@ -23,6 +23,12 @@ public class StringCodeExample {
 		boolean isEqual = str.equals("Hello World!!");
 		System.out.println(isEqual);
 
+		//equalsIgnoreCase & compareToIgnoreCase
+		String str1 = "HELLO",str2 = "hello";
+		int result1 = str1.compareToIgnoreCase(str2);// 0, 1 if str1 >str2. -1 if str1 < str2
+		boolean result2 = str1.equalsIgnoreCase(str2); //true
+		System.out.println(result1+ " : "+result2);
+		
 		//startsWith & endsWith
 		boolean flag1 = str.startsWith("Hel");
 		boolean flag2 = str.endsWith("Hel");

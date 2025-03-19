@@ -3,7 +3,9 @@ package com.daily.concepts.java8features;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class StreamExamples {
 
@@ -31,6 +33,12 @@ public class StreamExamples {
         System.out.println(city);
         
         System.out.println(cities.stream().anyMatch(aCity -> aCity.startsWith("D")));
+        
+        //GroupingBy
+        List<String> names = Arrays.asList("Avinash", "Praveen", "Dinesh", "Ashwin");
+        Map<Character, List<String>> groupedByLetter = names.stream()
+                .collect(Collectors.groupingBy(name -> name.charAt(0)));
+        System.out.println(groupedByLetter);
 		
 	}
 }

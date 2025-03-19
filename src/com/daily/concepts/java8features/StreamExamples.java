@@ -41,8 +41,7 @@ public class StreamExamples {
                 .collect(Collectors.groupingBy(name -> name.charAt(0)));
         System.out.println(groupedByLetter);
 		
-<<<<<<< HEAD
-=======
+
         //max
         List<Integer> myList = Arrays.asList(10,16,8,49,24,98,98,32,10);
         int max =  myList.stream()
@@ -54,6 +53,5 @@ public class StreamExamples {
         String str = "Hello";
         Map<String, Long> mapObject = Arrays.stream(str.split(""))
                 .map(String::toLowerCase).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
->>>>>>> fb2680d (char count using groupingBy)
 	}
 }

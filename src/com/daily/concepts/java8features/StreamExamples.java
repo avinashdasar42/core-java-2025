@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class StreamExamples {
@@ -40,5 +41,19 @@ public class StreamExamples {
                 .collect(Collectors.groupingBy(name -> name.charAt(0)));
         System.out.println(groupedByLetter);
 		
+<<<<<<< HEAD
+=======
+        //max
+        List<Integer> myList = Arrays.asList(10,16,8,49,24,98,98,32,10);
+        int max =  myList.stream()
+                         .max(Integer::compare)
+                         .get();
+        System.out.println(max);
+        
+        //groupingBY on char count
+        String str = "Hello";
+        Map<String, Long> mapObject = Arrays.stream(str.split(""))
+                .map(String::toLowerCase).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+>>>>>>> fb2680d (char count using groupingBy)
 	}
 }

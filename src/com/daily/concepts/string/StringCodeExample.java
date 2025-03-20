@@ -86,6 +86,12 @@ public class StringCodeExample {
 		System.out.println(s1+s3);//Hellonull
 		System.out.println(s1.concat(s3));//throws null pointer exception
 		System.out.println(s1+num);
+
+		//contentEquals
+		String myStr = "Hello";
+		System.out.println(myStr.contentEquals("Hello"));//true
+		System.out.println(myStr.contentEquals("e"));//false
+		System.out.println(myStr.contentEquals("Hi"));//false
 		
 	}
 }
